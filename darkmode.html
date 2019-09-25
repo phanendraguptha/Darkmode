@@ -1,32 +1,7 @@
 <html>
 	<head>
 		<title>Dark Mode</title>
-		<style>
-			body{
-				font-family: "Montserrat",sans-serif;
-				background-color: #fcfcfc;
-			}
-			h2{
-				font-size: 39px;
-				/*line-height: 69px;*/
-				color:#0077FF;
-			}
-			div h2 span{
-				float: right;
-			}
-			div p{
-				font-size: 20px;
-				color: #333333;
-			}
-			.box{
-				border-radius: 15px;
-				margin: auto;
-				padding:25px;
-				width:750px;
-				background-color: #dbe2e3;
-				color: #EBEBEB; 
-			}
-		</style>
+		<link rel="stylesheet" href="/style.css">
 	</head>
 	<body>
 		
@@ -42,22 +17,7 @@
 			<p class="paragraph">Click the checkbox for toggling to dark mode</p>
 		</div>
 
-		<script>
-			function toggle(a){
-				if(a.checkbox.checked==true){
-					document.body.style.backgroundColor = "#333333";
-					document.getElementsByClassName("box")[0].style.backgroundColor="#434343";
-					document.getElementsByClassName("heading")[0].style.color="#3694FF";
-					document.getElementsByClassName("paragraph")[0].style.color="#B5B5B5";
-				}
-				else if(a.checkbox.checked==false){
-					document.body.style.backgroundColor = "#fcfcfc";
-					document.getElementsByClassName("box")[0].style.backgroundColor="#EBEBEB";
-					document.getElementsByClassName("heading")[0].style.color="#0077FF";
-					document.getElementsByClassName("paragraph")[0].style.color="#333333";
-				}
-			};
-		</script>
+		<script src="/script.js"></script>
 	</body>
 </html>
 
